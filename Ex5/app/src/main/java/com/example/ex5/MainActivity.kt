@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val mostrar: TextView = findViewById(R.id.resultado)
 
+        val button0: Button = findViewById(R.id.button0)
         val button1: Button = findViewById(R.id.button1)
         val button2: Button = findViewById(R.id.button2)
         val button3: Button = findViewById(R.id.button3)
@@ -48,10 +49,10 @@ class MainActivity : AppCompatActivity() {
          */
 
         //los 9 onclickListener para los números
-        val buttons = listOf(button1, button2, button3, button4, button5, button6, button7, button8, button9)
+        val buttons = listOf(button0, button1, button2, button3, button4, button5, button6, button7, button8, button9)
         buttons.forEachIndexed { index, button ->
             button.setOnClickListener {
-                mostrar.text = mostrar.text.toString() + (index + 1).toString()
+                mostrar.text = mostrar.text.toString() + (index).toString()
             }
         }
 

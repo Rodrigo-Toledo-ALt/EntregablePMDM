@@ -16,6 +16,11 @@ class Activity1 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity1)
 
+        val volver: Button = findViewById(R.id.button1)
+        volver.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

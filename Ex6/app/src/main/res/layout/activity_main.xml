@@ -12,21 +12,24 @@
         android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <ImageView
+
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="61dp"
             android:src="@drawable/pedro"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/nombre"
-            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintBottom_toTopOf="@+id/nombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.163"
+            app:layout_constraintVertical_bias="1.0"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -34,27 +37,26 @@
             android:id="@+id/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="76dp"
+            android:layout_marginEnd="140dp"
             android:text="Jose Pedro Pascual"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.218" />
+            app:layout_constraintVertical_bias="0.247" />
 
         <TextView
 
             android:id="@+id/Descripcion"
             android:layout_width="325dp"
             android:layout_height="170dp"
-            android:layout_marginTop="42dp"
             android:layout_marginBottom="332dp"
             android:lines="20"
             android:text="Esta es la descripción de Jose Pedro Pascual, actual regente de la empresa de desarrollo de software, con más de 10 años de experiencia en el sector. Sigue siendo uno de los hombres más interesantes de este pais."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.297"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/nombre"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
